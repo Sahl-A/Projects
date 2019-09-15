@@ -1,0 +1,19 @@
+{
+  "name": "paypal",
+  "version": "1.0.0",
+  "description": "This is the first time to configure the npm package using the command npm init which will create the file package.json",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sahl-A/Projects.git"
+  },
+  "author": "Sahl Khalifa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sahl-A/Projects/issues"
+  },
+  "homepage": "https://github.com/Sahl-A/Projects#readme"
+}
