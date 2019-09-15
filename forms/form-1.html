@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0160dfaeed.js"></script> <!-- to insert the icons from the fontawesome website -->
+  <!--<link rel="stylesheet" type="text/css" href="bootstrap.css">-->
+  <style>
+    .purchase-form {
+      background: salmon;
+      width: 70%;
+      max-width: 30rem;
+      min-width: 320px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .fieldset {
+      border: none;
+    }
+    .fieldset legend {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }  
+    .label-container {
+      border: 1.5px white solid;
+      border-radius: 4px;
+      display: block;
+      background: lightsalmon;
+      padding: 1rem;
+    }
+    .fieldset__label {
+      margin: 5px 10px 5px 10px;
+    }
+
+    .label {
+      color: black;
+      display: inline-block;
+      width: 30%;
+      
+    }
+    .input-style {
+      display: inline-block;
+      height: 20px;
+      width: 50%;
+      padding: 3px 6px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+    .input-control {
+      margin:0 6% 0 6%;
+    }
+    .textarea-label {
+      vertical-align: top;
+    }
+    .radio--style {
+        transform: scale(1.3);
+    }
+    .radio-container {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    @media screen and (max-width: 350px) {
+
+      .purchase-form {
+        padding: 2rem 0;
+      }
+      .fieldset {
+        padding: 0;
+      }
+      .fieldset__label {
+        margin: 5px 3px 5px 3px;
+      }
+    }
+  </style>
+    
+</head>
+<body>
+  <form class="purchase-form">
+
+    <fieldset class="fieldset">
+      <legend>Step 1: Your details</legend>
+      <label class="label-container fieldset__label">
+        <span class="label">Name</span>
+        <input class="input-style input-control" type="text" name="name">
+      </label>
+
+      <label class="label-container fieldset__label">
+        <span class="label">Email</span>
+        <input class="input-style input-control" type="email" name="email">
+      </label>
+
+      <label class="label-container fieldset__label">
+        <span class="label">Phone</span>
+        <input class="input-style input-control" type="number" name="phone">
+      </label>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend>Step 2: Delivery Address</legend>
+      <label class="label-container fieldset__label">
+        <span class="label textarea-label">Address</span>
+        <textarea class="input-style input-control purchase-textarea" style="height: 4rem" required></textarea>
+      </label>
+
+      <label class="label-container fieldset__label">
+        <span class="label">Post Code</span>
+        <input class="input-style input-control" type="number" name="post-code" required>
+      </label>
+
+      <label class="label-container fieldset__label">
+        <span class="label">Country</span>
+        <input class="input-style input-control" type="text" name="Country">
+      </label>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend>Step 3: Card Details</legend>
+
+      <label class="label-container fieldset__label">
+        <span class="label">Card type</span>
+        <div class="radio-container">
+          <span><input class="radio--style" type="radio" name="Card-type" type="Visa"> Visa</span>
+          <span><input class="radio--style" type="radio" name="Card-type" type="AmEx"> AmEx</span>
+          <span><input class="radio--style" type="radio" name="Card-type" type="Mastercard"> Mastercard</span>
+        </div>
+      </label>
+
+      <label class="label-container fieldset__label">
+        <span class="label">Card Number</span>
+        <input class="input-style input-control" type="number" name="card-number" required minlength="13">
+      </label>
+
+      <label class="label-container fieldset__label">
+        <span class="label">Security Code</span>
+        <input class="input-style input-control" type="nmber" name="Security-Code" required>
+      </label>
+
+      <label class="label-container fieldset__label">
+        <span class="label">Name on Card</span>
+        <input class="input-style input-control" type="text" name="Name-on-Card">
+      </label>
+    </fieldset>
+
+  </form>
+</body>
+</html>

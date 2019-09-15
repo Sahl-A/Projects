@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0160dfaeed.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PayPal</title>
+</head>
+<body class="body">
+    <header id="main-header" class="main-header">
+        <nav id="main-side-nav" class="main-side-nav js-menu">
+                sadfasfsad 
+        </nav>
+        <a href="" class="main-header__menu btn js-trigger">
+            <span onclick="openNav()"><i class="fas fa-bars"> Menu &#8801</i></span>
+        </a>
+        <a href="" class="main-header__logo">
+            <i class="fab fa-paypal"></i>
+        </a>
+        <a href="" class="main-header__login">
+            <button class="btn">Log in</button>
+        </a>
+    </header>
+    <main id="main-page" class="main-page">
+
+    </main>
+    <footer id="main-footer" class="main-footer">
+
+    </footer>
+    <script src="./bootstrap.js"></script>
+    <script>
+            function openNav() {
+              document.getElementById("main-side-nav").style.width = "250px";
+              document.getElementById("main-header").style.marginLeft = "250px";
+              document.getElementsByClassName("main-page").style.marginLeft = "250px";
+              document.getElementsByClassName("main-footer").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("main-side-nav").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+              document.getElementsByClassName("main-page").style.marginLeft = "0";
+              document.getElementsByClassName("main-footer").style.marginLeft = "0";
+            }
+            </script>
+</body>
+</html>
